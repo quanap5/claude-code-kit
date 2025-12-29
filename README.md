@@ -1,1 +1,5 @@
-# claude-code-kit
+# CLAUDE-CODE-KIT
+
+## Quick start
+
+## Sample
