@@ -30,6 +30,18 @@ except:
 # Check if pushing to main or develop
 push_cmd = command
 is_force_push = "--force" in push_cmd or "-f" in push_cmd
+is_pushing_tags = "--tags" in push_cmd
+
+# Check if we just merged a release or hotfix (last commit message contains "release" or "hotfix")
+try:
+    last_commit_msg = subprocess.check_output(
+        ["git", "log", "-1", "--pretty=%B"],
+        stderr=subprocess.DEVNULL,
+        text=True
+    ).strip().lower()
+    is_release_workflow = "release" in last_commit_msg or "hotfix" in last_commit_msg
+except:
+    is_release_workflow = False
 
 # Check if command or current branch targets protected branches
 targets_protected = (
@@ -37,6 +49,10 @@ targets_protected = (
     "origin develop" in push_cmd or
     current_branch in ["main", "develop"]
 )
+
+# Allow pushes during release/hotfix workflow (merging and tagging)
+if is_pushing_tags or is_release_workflow:
+    sys.exit(0)
 
 # Block direct push to main/develop (unless force push which is already dangerous)
 if targets_protected and not is_force_push:
