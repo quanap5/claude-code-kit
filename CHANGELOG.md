@@ -2,25 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.1.0] - 2026-01-07
-
-### ✨ Features
-- feat: add analyze-issue command and document writer agent spec (192f595)
-  - `/analyze-issue` slash command to generate implementation specs from GitHub issues
-  - Document writer agent spec for structured documentation generation
-- feat: add explain command and Card component (d5a6127)
-  - `/explain` slash command for junior-developer-friendly code explanations
-  - Reusable Card component with TypeScript, Tailwind CSS, and tests
-
-### 🐛 Bug Fixes
-- fix(hooks): allow release workflow pushes (44f6a10)
-
-### 🔧 Chore
-- chore(release): prepare v1.0.2 release (b6787f9)
-- chore(release): merge v1.0.1 back into develop (d0f5a78)
-
----
-
 ## [v1.0.2] - 2026-01-05
 
 ### ✨ Features
