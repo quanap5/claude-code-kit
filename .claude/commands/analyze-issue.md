@@ -23,5 +23,6 @@ argument-hint: <issue-number>
    - Edge cases to cover
 6. **Definition of Done**
    - Functionality checklist, test coverage requirements
-   - Documentation updates, performance benchmarks
-     Create `specs/issue-$ARGUMENTS-spec.md` with complete analysis.
+   - Documentation updates, performance benchmarks\
+
+Create `specs/issue-$ARGUMENTS-spec.md` with complete analysis.
