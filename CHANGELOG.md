@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.3.0] - 2026-01-08
+
+### ✨ Features
+- feat: zero-configure slash command (fef0efa)
+  - `/feature-scaffold` command for generating feature scaffolds with tests, types, and docs
+  - `/gitflow-status` command for comprehensive Git Flow status display
+  - New tabtable feature component with TypeScript, styles, and comprehensive tests
+  - Enhanced analyze-issue command functionality
+- feat: add analyze issue 7 (e961c6b)
+  - Improved issue analysis capabilities
+
+### 🔧 Chore
+- Merge feature/zero-config into develop (b6bcf58)
+- Merge feature/analyze-issue into develop (a27ad8d)
+- Merge release/v1.1.0 back into develop (6707eda)
+
+---
+
 ## [v1.1.0] - 2026-01-07
 
 ### ✨ Features
