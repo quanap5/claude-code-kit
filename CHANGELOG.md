@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.0] - 2026-01-21
+
+### ✨ Features
+- feat: add comprehensive optimize slash command (e71b192)
+  - `/optimize` command for code performance analysis
+  - Identifies bottlenecks, optimization opportunities, and improvement strategies
+  - Provides structured optimization reports with before/after metrics
+  - Covers algorithm efficiency, code quality, and build optimizations
+
+### 📝 Documentation
+- docs: create comprehensive README.md documentation (707cfff)
+  - Complete project overview with badges and key features
+  - Quick start guide with installation and first steps
+  - Architecture documentation with ASCII diagrams
+  - Complete feature documentation (11 commands, 1 agent, 2 components)
+  - 5 common workflows and 3 detailed usage examples
+  - Project structure mapping to Claude Code features
+  - Development guide and contributing guidelines
+  - Transformed from 6 lines to 660 lines (110x increase)
+- docs: add comprehensive specification for issue #13 (5ae66d9)
+  - Detailed implementation specification for README improvements
+  - 7-task implementation plan with complexity estimates
+  - Comprehensive test strategy and definition of done
+
+### 🔧 Chore
+- Merge feature/feature-optimize into develop (72c4beb)
+- Merge feature/feature-docs into develop (fbbcaa0)
+- Merge release/v1.3.0 back into develop (755b774)
+
+---
+
 ## [v1.3.0] - 2026-01-08
 
 ### ✨ Features
