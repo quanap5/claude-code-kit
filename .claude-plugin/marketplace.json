@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "claude-code-kit",
-      "source": ".",
+      "source": "./",
       "description": "Git Flow automation, Excalidraw diagramming, code analysis, and developer productivity skills",
       "version": "1.5.0",
       "author": {
