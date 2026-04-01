@@ -1,0 +1,24 @@
+{
+  "name": "claude-code-kit",
+  "owner": {
+    "name": "quanap5"
+  },
+  "metadata": {
+    "description": "A comprehensive Claude Code plugin marketplace with Git Flow automation, architecture diagramming, code analysis, and developer productivity tools",
+    "version": "1.5.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-kit",
+      "source": ".",
+      "description": "Git Flow automation, Excalidraw diagramming, code analysis, and developer productivity skills",
+      "version": "1.5.0",
+      "author": {
+        "name": "quanap5"
+      },
+      "license": "MIT",
+      "keywords": ["git-flow", "excalidraw", "diagrams", "code-review", "developer-tools"],
+      "category": "productivity"
+    }
+  ]
+}
