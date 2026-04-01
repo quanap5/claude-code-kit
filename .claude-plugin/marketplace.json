@@ -19,23 +19,7 @@
       "license": "MIT",
       "keywords": ["git-flow", "excalidraw", "diagrams", "code-review", "developer-tools"],
       "category": "productivity",
-      "tags": ["git-flow", "excalidraw", "architecture-diagrams", "code-analysis", "scaffolding"],
-      "strict": false,
-      "commands": "./.claude/commands",
-      "agents": ["./.claude/agents/git-flow-manager.md"],
-      "hooks": {
-        "PreToolUse": [
-          {
-            "matcher": "Bash",
-            "hooks": [
-              {
-                "type": "command",
-                "command": "python3 ${CLAUDE_PLUGIN_ROOT}/.claude/hooks/prevent-direct-push.py"
-              }
-            ]
-          }
-        ]
-      }
+      "tags": ["git-flow", "excalidraw", "architecture-diagrams", "code-analysis", "scaffolding"]
     }
   ]
 }
