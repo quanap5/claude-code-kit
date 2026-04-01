@@ -10,5 +10,20 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/quanap5/claude-code-kit"
+  },
+  "commands": "./.claude/commands",
+  "agents": ["./.claude/agents/git-flow-manager.md"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/.claude/hooks/prevent-direct-push.py"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -11,14 +11,31 @@
     {
       "name": "claude-code-kit",
       "source": "./",
-      "description": "Git Flow automation, Excalidraw diagramming, code analysis, and developer productivity skills",
+      "description": "Git Flow automation, Excalidraw diagramming, code analysis, and developer productivity tools",
       "version": "1.5.0",
       "author": {
         "name": "quanap5"
       },
       "license": "MIT",
       "keywords": ["git-flow", "excalidraw", "diagrams", "code-review", "developer-tools"],
-      "category": "productivity"
+      "category": "productivity",
+      "tags": ["git-flow", "excalidraw", "architecture-diagrams", "code-analysis", "scaffolding"],
+      "strict": false,
+      "commands": "./.claude/commands",
+      "agents": ["./.claude/agents/git-flow-manager.md"],
+      "hooks": {
+        "PreToolUse": [
+          {
+            "matcher": "Bash",
+            "hooks": [
+              {
+                "type": "command",
+                "command": "python3 ${CLAUDE_PLUGIN_ROOT}/.claude/hooks/prevent-direct-push.py"
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }
