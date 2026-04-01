@@ -1,7 +1,6 @@
 {
-  "hooks": {
-    "PreToolUse": [],
-    "PostToolUse": []
-  },
-  "mcpServers": {}
+  "statusLine": {
+    "type": "command",
+    "command": "claude-statusline"
+  }
 }
