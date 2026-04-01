@@ -1,0 +1,26 @@
+{
+  "name": "claude-code-kit",
+  "description": "A comprehensive Claude Code plugin with Git Flow automation, architecture diagramming (Excalidraw), code analysis, and developer productivity tools",
+  "version": "1.5.0",
+  "author": {
+    "name": "quanap5"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/quanap5/claude-code-kit",
+  "repository": "https://github.com/quanap5/claude-code-kit",
+  "commands": "./.claude/commands",
+  "agents": ["./.claude/agents/git-flow-manager.md"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/.claude/hooks/prevent-direct-push.py"
+          }
+        ]
+      }
+    ]
+  }
+}
