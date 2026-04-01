@@ -7,10 +7,7 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/quanap5/claude-code-kit",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/quanap5/claude-code-kit"
-  },
+  "repository": "https://github.com/quanap5/claude-code-kit",
   "commands": "./.claude/commands",
   "agents": ["./.claude/agents/git-flow-manager.md"],
   "hooks": {
